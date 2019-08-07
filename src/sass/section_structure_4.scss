@@ -1,6 +1,12 @@
 .structure-wraper {
   width: 281px;
   margin: 0 auto;
+  padding-bottom: 59px;
+  @media (min-width: 620px) {
+    width: 620px;
+    padding-bottom: 76px;
+  }
+
 }
 
 // ------- styles
@@ -23,11 +29,31 @@
     background-repeat: no-repeat;
     background-position: center;
     // margin-bottom: 30px;
+
+    @media (min-width: 620px) {
+      margin-right: 23px;
+    }
+  }
+
+  @media (min-width: 620px) {
+    font-size: 33px;
+    justify-content: left;
   }
 }
 
 .card-structure {
   list-style: none;
+
+  @media (min-width: 620px) {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+
+  }
+
+
 }
 
 .card-structure__info {
@@ -37,7 +63,7 @@
   padding: 18px;
   box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
 
-  @media (max-width: 669px) {
+  @media (max-width: 619px) {
     &:not(:last-child) {
       margin-bottom: 14px;
     }
@@ -59,6 +85,22 @@
     background-color: #c8eae8;
   }
 
+  @media (min-width: 620px) {
+    width: 300px;
+    min-height: 292px;
+    border-radius: 0 30px 0 30px;
+    padding: 18px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 20px;
+     
+    }
+
+    &:not(:nth-last-child(-n+2)) {
+      margin-bottom: 0px;
+      margin-bottom: 22px;
+    }
+  }
 }
 
 .card-structure__dashed-wrap {
@@ -68,6 +110,15 @@
   padding: 27px;
   padding-bottom: 30px;
   padding-top: 30px;
+  border-radius: 0 30px 0 30px;
+
+  @media (min-width: 620px) {
+    width: 264px;
+    padding: 20px;
+    min-height: 259px;
+    padding: 18px;
+    padding-top: 42px;
+  }
 }
 
 // ------- fonts
@@ -86,6 +137,10 @@
   font-weight: bold;
   line-height: 1.08;
   margin-bottom: 16px;
+
+  @media (min-width: 620px) {
+    font-size: 30px;
+  }
 }
 
 .card-structure__text {
