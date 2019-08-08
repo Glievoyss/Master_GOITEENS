@@ -2,9 +2,14 @@
   width: 281px;
   margin: 0 auto;
   padding-bottom: 59px;
+
   @media (min-width: 620px) {
     width: 620px;
     padding-bottom: 76px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1299px;
   }
 
 }
@@ -32,12 +37,14 @@
 
     @media (min-width: 620px) {
       margin-right: 23px;
+      background-image: url(../images/structure_ic_tablet.svg);
     }
   }
 
   @media (min-width: 620px) {
     font-size: 33px;
     justify-content: left;
+    margin-bottom: 69px;
   }
 }
 
@@ -47,13 +54,7 @@
   @media (min-width: 620px) {
     display: flex;
     flex-wrap: wrap;
-
-
-
-
   }
-
-
 }
 
 .card-structure__info {
@@ -62,7 +63,7 @@
   border-radius: 0 30px 0 30px;
   padding: 18px;
   box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
-
+  
   @media (max-width: 619px) {
     &:not(:last-child) {
       margin-bottom: 14px;
@@ -93,10 +94,24 @@
 
     &:not(:nth-child(2n)) {
       margin-right: 20px;
-     
     }
 
-    &:not(:nth-last-child(-n+2)) {
+    @media (max-width: 1439px) {
+      &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 0px;
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+
+
+    &:not(:nth-child(4n)) {
+      margin-right: 20px;
+    }
+
+    &:not(:nth-last-child(-n+4)) {
       margin-bottom: 0px;
       margin-bottom: 22px;
     }
