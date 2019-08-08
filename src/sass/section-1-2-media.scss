@@ -1,0 +1,11 @@
+.info-1-wrap, .directions-2-wrap {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 620px;
+  }
+  @media (min-width: 1400px) {
+    width: 1300px;
+  }
+}
