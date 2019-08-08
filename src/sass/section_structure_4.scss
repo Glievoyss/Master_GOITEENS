@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-bottom: 59px;
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     width: 620px;
     padding-bottom: 76px;
   }
@@ -35,13 +35,13 @@
     background-position: center;
     // margin-bottom: 30px;
 
-    @media (min-width: 620px) {
+    @media (min-width: 768px) {
       margin-right: 23px;
       background-image: url(../images/structure_ic_tablet.svg);
     }
   }
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     font-size: 33px;
     justify-content: left;
     margin-bottom: 69px;
@@ -51,7 +51,7 @@
 .card-structure {
   list-style: none;
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -64,7 +64,7 @@
   padding: 18px;
   box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
   
-  @media (max-width: 619px) {
+  @media (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 14px;
     }
@@ -86,7 +86,7 @@
     background-color: #c8eae8;
   }
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     width: 300px;
     min-height: 292px;
     border-radius: 0 30px 0 30px;
@@ -106,9 +106,8 @@
 
   @media (min-width: 1440px) {
 
-
     &:not(:nth-child(4n)) {
-      margin-right: 20px;
+      margin-right: 33px;
     }
 
     &:not(:nth-last-child(-n+4)) {
@@ -127,7 +126,7 @@
   padding-top: 30px;
   border-radius: 0 30px 0 30px;
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     width: 264px;
     padding: 20px;
     min-height: 259px;
@@ -153,7 +152,7 @@
   line-height: 1.08;
   margin-bottom: 16px;
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     font-size: 30px;
   }
 }
