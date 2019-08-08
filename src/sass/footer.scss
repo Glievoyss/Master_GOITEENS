@@ -8,6 +8,7 @@
 
   @media (min-width: 768px) {
     padding-bottom: 68px;
+    padding-bottom: 0;
     padding-left: 0;
   }
 
@@ -30,7 +31,13 @@
 
 .adress-wrap__items_margin-adres {
   margin-bottom: 20px;
-  width: 192px;
+  width: 172px;
+
+  @media (min-width: 1440px) {
+    width: 189px;
+
+
+  }
 
 }
 
@@ -57,7 +64,6 @@
 }
 
 
-
 .but-soc {
 
   @media (min-width: 768px) {
@@ -65,7 +71,15 @@
     width: 192px;
     display: flex;
     flex-wrap: wrap;
-    
+
+  }
+
+  @media (min-width: 1440px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 518px;
+
+
   }
 
 }
@@ -84,7 +98,7 @@
 
   }
 
-  
+
 }
 
 .but-soc__soc-wrap {
@@ -92,7 +106,7 @@
 
   @media (min-width: 768px) {
 
-    margin: 0 auto;
+    // margin: 0 auto;
 
   }
 }
@@ -106,6 +120,33 @@
   }
 }
 
+.butt-up {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-image: url(../images/footer_row.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-color: #333333;
+  border-radius: 50px;
+  box-shadow: 0px 7px 12px 0px rgba(51, 51, 51, 0.5);
+  position: absolute;
+  opacity: 0;
+
+  @media (min-width: 768px) {
+    opacity: 1;
+    right: -33px;
+    top: -70px;
+  }
+
+  @media (min-width: 1440px) {
+    opacity: 1;
+    right: -38px;
+    top: 130px;
+  }
+
+}
 
 // --------- ligal
 .ligal {
@@ -113,6 +154,12 @@
   padding-left: 65px;
   padding-top: 19px;
   padding-bottom: 19px;
+
+  @media (min-width: 768px) {
+
+    padding-left: 0;
+
+  }
 }
 
 .footer-container {
@@ -123,6 +170,49 @@
   @media (min-width: 768px) {
 
     width: 620px;
+    position: relative;
+
+  }
+
+  @media (min-width: 1440px) {
+
+    width: 1300px;
+
+  }
+}
+
+.footer-position {
+
+  @media (min-width: 1440px) {
+
+    width: 1152px;
+
+  }
+}
+
+.ligal-container {
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  @media (min-width: 1440px) {
+
+    width: 1300px;
+
+  }
+}
+
+.ligal__items {
+  @media (min-width: 768px) {
+    width: 568px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+
+    width: 634px;
 
   }
 }
@@ -133,6 +223,7 @@
   font-family: 'Ubuntu Bold', 'Cyrillic Ubuntu Bold';
   color: rgb(150, 153, 166);
   line-height: 1.786;
+
 }
 
 .but-soc__butt {
@@ -140,8 +231,7 @@
   font-family: 'Open Sans Bold', 'Cyrillic Open Sans Bold';
   color: rgb(246, 249, 250);
   font-weight: bold;
-  
- 
+
 }
 
 
