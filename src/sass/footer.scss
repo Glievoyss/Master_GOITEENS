@@ -1,0 +1,111 @@
+.footer-wrap {
+
+  margin: 0 auto;
+  padding-top: 42px;
+  padding-left: 65px;
+  padding-bottom: 32px;
+  background-color: #222222;
+
+  @media (min-width: 620px) {
+
+    padding-bottom: 68px;
+  }
+
+  @media (min-width: 1440px) {}
+
+
+}
+
+// --------- footer
+
+.footer-wrap__link {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.footer-wrap__logo {
+  width: 101px;
+}
+
+
+.adress-wrap__items_margin-adres {
+  margin-bottom: 20px;
+}
+
+.adress-wrap {
+  margin-bottom: 24px;
+  width: 193px;
+}
+
+.adress-wrap__items_margin-tell {
+  width: 128px;
+}
+
+.but-soc {}
+
+.but-soc__butt {
+  width: 192px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  background-color: $color-orange;
+}
+
+.but-soc__soc-wrap {
+  display: flex;
+}
+
+.footer-wrap__png {
+  width: 37px;
+  height: 37px;
+
+  &:not(last-child) {
+    margin-right: 18px;
+  }
+}
+
+
+// --------- ligal
+.ligal {
+  background-color: #151515;
+  padding-left: 65px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+// .ligal__wrap {
+
+//   @media (min-width: 620px) {
+
+//     display: block;
+//     margin: 0 auto;
+//     // width: 620px;
+
+//   }
+// }
+
+
+
+//   -------- fonts
+.adress-wrap__items_fonts {
+  font-size: 14px;
+  font-family: 'Ubuntu Bold', 'Cyrillic Ubuntu Bold';
+  color: rgb(150, 153, 166);
+  line-height: 1.786;
+}
+
+.but-soc__butt {
+  font-size: 16px;
+  font-family: 'Open Sans Bold', 'Cyrillic Open Sans Bold';
+  color: rgb(246, 249, 250);
+  font-weight: bold;
+  margin-bottom: 34px;
+}
+
+
+.ligal__item {
+  font-size: 12px;
+  font-family: 'Open Sans SemiBold', 'Cyrillic Open Sans SemiBold';
+  color: rgb(98, 98, 99);
+  line-height: 2.083;
+}
