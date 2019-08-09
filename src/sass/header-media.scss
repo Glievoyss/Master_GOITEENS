@@ -30,27 +30,31 @@
     }
 
     .header__menu-and-btn{
+        width: 1022px;
         position: absolute;
         right: 2%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+        align-items: baseline;
         background-color: transparent;
     }
 
     .header__btn {
+        height: 43px;
         margin: 0;
-        margin-left: 50px;
+        // margin-left: 50px;
         display: block;
         max-height: 5%;
         line-height: 20px;
-        padding: 10px;
+        // padding: 10px;
         padding-top: 0;
     }
 
     .header__menu {
-        max-width: 800px;
+        // max-width: 800px;
+        width: 794px;
+
         padding-top: 20px;
         background-color: transparent;
         flex-direction: row;
@@ -58,7 +62,7 @@
     }
 
     .header-menu__text {
-        font-size: 8px;
+        font-size: 18px;
         line-height: 12px;
     }
 
