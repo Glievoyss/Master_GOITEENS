@@ -1791,7 +1791,20 @@ img {
   }
 
   .header__text {
+    line-height: 25px;
     margin: 0;
+    position: relative;
+  }
+
+  .header__text::before {
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: #fcae26;
+    border: none;
+    position: absolute;
+    top: 5px;
+    left: 15px;
   }
 
   .header__scroll {
