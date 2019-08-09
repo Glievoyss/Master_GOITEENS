@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-burger {
+  width: 47px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-goiteens_logo-01 {
+  width: 122px;
+  height: 32px;
+  background-position: -96px 0;
+}
+

@@ -1,4 +1,206 @@
-.test {
-  @include font_mix($f-OpSanL, 55px);
-  color: $color-fiolet;
+.page-header {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 9%;
+  background-image: url('../images/header__bg.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.header__top {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: transparent;
+  z-index: 1;
+}
+
+.page-header__logo-link {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.page-header__logo-svg {
+  width: 100px;
+  height: 25px;
+}
+
+.header__check {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.header__check + label {
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background: url('../images/header__burger.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.header__check:checked + label {
+  background: url('../images/header__close.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
+
+.header__menu-and-btn {
+  margin: 0;
+  padding: 0 0 50px;
+  // height: 100vh;
+  display: none;
+  background-color: $color-fiolet;
+}
+
+.header__menu {
+  background-color: $color-fiolet;
+  margin: 0;
+  padding: 0;
+  min-width: 460px;
+  list-style: none;
+  padding-top: 20%;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__check:checked ~ .header__menu-and-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__check:checked ~ .header__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu__item {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.header-menu__item:hover,
+.header-menu__item:focus {
+  border-bottom: 3px solid $color-orange;
+}
+
+.header-menu__link {
+  display: block;
+  text-decoration: none;
+}
+
+.header-menu__text {
+  color: white;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.header-menu__text--eng {
+  font-family: 'Ubuntu Bold';
+}
+
+.header-menu__text--ukr {
+  font-family: 'Cyrillic Ubuntu Bold';
+}
+
+.header__btn {
+  display: flexbox;
+  background-color: orange;
+  border: none;
+  font-family: 'Cyrillic Open Sans Bold';
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(246, 249, 250);
+  max-width: 192px;
+  margin: 0;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(252, 174, 38, 0.4);
+}
+
+.header-container {
+  max-width: 280px;
+  margin: 0 auto;
+  height: 456px;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.header__title {
+  font-family: 'Cyrillic Open Sans ExtraBold';
+  font-size: 35px;
+  line-height: 59px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 56%;
+  margin-bottom: 20px;
+}
+
+.header__text {
+  font-family: 'Cyrillic Ubuntu Reg';
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -50%;
+  text-align: center;
+  color: white;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 60px;
+  background-color: rgba(72, 63, 61, 0.68);
+}
+
+.header__text--yellow {
+  color: rgb(205, 152, 54);
+}
+
+.header__scroll {
+  display: block;
+  width: 13px;
+  height: 18px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-image: url('../images/header__scroll.png');
+  background-color: transparent;
+  background-repeat: repeat-y;
+}
+
+
