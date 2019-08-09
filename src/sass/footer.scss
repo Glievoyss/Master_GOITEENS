@@ -107,8 +107,9 @@
 
   @media (min-width: 768px) {
 
-    // margin: 0 auto;
-
+    margin: 0 auto;
+    padding-top: 5px;
+    
   }
 }
 
@@ -242,4 +243,13 @@
   font-family: 'Open Sans SemiBold', 'Cyrillic Open Sans SemiBold';
   color: rgb(98, 98, 99);
   line-height: 2.083;
+}
+
+.adress-wrap__tm-wrap_color {
+  
+    
+    color: rgb(150, 154, 168);
+    text-decoration: none;
+    
+  
 }
